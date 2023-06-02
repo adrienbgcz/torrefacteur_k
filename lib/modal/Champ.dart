@@ -18,7 +18,6 @@ class Champ {
         nom = json['nom'],
         specificite = json['specificite'],
         kafes = [...json['kafes'].values.map((kafe) => Kafe.fromJson(kafe))];
-        /*kafes = json['kafes'].forEach((k,v) => print('$k : $v'));*/
 
   Map<String, dynamic> toJson() => {
         'id': id,

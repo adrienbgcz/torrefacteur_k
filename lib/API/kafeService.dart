@@ -69,7 +69,6 @@ void addKafe() async{
       'joueur1')
       .child('exploitation').child('champs').child('0').child('kafes').child('newKafe-$uid');
 
-
   // Set the value of the new kafe using the generated key
   kafeRef.set(newKafe.toJson()).then((_) {
     print("New kafe added successfully");
